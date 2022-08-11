@@ -1,0 +1,247 @@
+/* Declarações Globais */
+html {
+  background-color: #0f172a;
+  color: #ffffff;
+  font-size: 62.5%;
+}
+.inspecionar {
+  border: 5px solid red;
+}
+.itens-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer,
+section {
+  padding: 5rem;
+  max-width: 96rem;
+  margin: 0 auto;
+}
+span {
+  color: red;
+}
+h2 {
+  font-size: 4rem;
+  font-weight: 700;
+}
+h3 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+}
+/* Navegação */
+.nav-pasini {
+  font-size: 2rem;
+  font-weight: 500;
+}
+.nav {
+  border: 0.1rem solid black;
+  border-radius: 1rem;
+  background-color: #162340;
+  padding: 2rem 6rem;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  font-size: 2rem;
+  font-weight: 500;
+}
+.nav-links a {
+  color: #ffffff;
+  text-decoration: none;
+}
+/* Imagem */
+.avatar {
+  border-radius: 100%;
+  width: 20.8rem;
+  height: 20.8rem;
+  margin-right: 10rem;
+}
+
+/* Main - Página Principal */
+.main {
+  margin-bottom: 5rem;
+}
+
+.main-title {
+  font-size: 3.8rem;
+}
+.main-description {
+  font-size: 1.8rem;
+  margin: 3.9rem 0;
+}
+.button {
+  border-radius: 0.2rem;
+  background-color: #162340;
+  padding: 1.3rem 2rem;
+  color: #ffffff;
+  text-decoration: none;
+  transition: all 0.5s ease-out;
+}
+.button:focus,
+.button:hover {
+  background-color: #fff;
+  color: #333;
+  font-weight: 600;
+}
+/* About - Sobre */
+.about {
+  background-color: #162340;
+}
+.about-description {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+/* Projetos */
+.project-img {
+  width: 27.6rem;
+  height: 18rem;
+  margin-right: 2.6rem;
+  border-radius: 0.6rem;
+}
+.project {
+  margin: 4rem 0;
+}
+/* Hability */
+.hability {
+  display: flex;
+  flex-direction: column;
+  background-color: #162340;
+}
+.hability-span {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: black;
+  display: flex;
+  justify-content: center;
+}
+.hability-img {
+  gap: 3rem;
+}
+/* Footer */
+footer {
+  flex-direction: column;
+}
+/* Signature */
+.signature p:not(.itens-center) {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0 0.6rem;
+}
+
+/* Icons */
+.icons {
+  display: flex;
+  column-gap: 2.2rem;
+}
+
+.icon {
+  width: 3.5rem;
+  height: 3.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 2.6rem;
+  color: #fff;
+  border-radius: 50%;
+  outline: 0.2rem solid #fff;
+  transition-property: outline-offset, outline-color, background-color;
+  transition-duration: 0.25s;
+}
+
+.icon:hover {
+  outline-offset: 0.4rem;
+}
+
+.icon:hover i {
+  animation: shake 0.25s;
+}
+
+.icon--instagram:hover {
+  background-image: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  outline-color: #a02d76;
+}
+
+.icon--whatsapp:hover {
+  background-color: #34af23;
+  outline-color: #34af23;
+}
+
+.icon--linkedin:hover {
+  background-color: #0077b5;
+  outline-color: #0077b5;
+}
+
+.icon--github:hover {
+  background-color: #171515;
+  outline-color: #171515;
+}
+
+@keyframes shake {
+  10% {
+    transform: rotate(15deg);
+  }
+
+  20% {
+    transform: rotate(-15deg);
+  }
+
+  30% {
+    transform: rotate(15deg);
+  }
+
+  40% {
+    transform: rotate(-15deg);
+  }
+}
+
+/* Responsividade @Media */
+@media (max-width: 1200px) {
+  .itens-center {
+    flex-direction: column;
+  }
+  footer,
+  section {
+    padding: 5rem;
+  }
+
+  .main {
+    margin-bottom: 2rem;
+    justify-content: center;
+  }
+  .main-title {
+    font-size: 3rem;
+  }
+  .project-img {
+    width: 38rem;
+    height: auto;
+    margin-right: 0;
+  }
+  .nav-links {
+    justify-content: center;
+    font-size: 1rem;
+  }
+  .avatar {
+    width: 18rem;
+    height: 18rem;
+    margin-right: 0;
+  }
+}
